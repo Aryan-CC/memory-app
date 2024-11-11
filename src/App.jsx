@@ -14,6 +14,7 @@ const App = () => {
     initializeGame();
   }, []);
 
+  //Add a card to the grid. The card should have a symbol on one side
   // Initialize game state
   const initializeGame = async () => {
     const res = await fetch("https://akabab.github.io/starwars-api/api/all.json");
@@ -64,7 +65,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Star Wars Memory Game</h1>
+      <h1>Memory Game</h1>
       {gameWon ? (
         <div className="win-message">
           <h2>Congratulations! You Won!</h2>
