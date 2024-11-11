@@ -1,6 +1,6 @@
 // Card.jsx
 import React from "react";
-import "./Card.css";
+import "./card.css";
 
 const Card = ({ character, isFlipped, onClick }) => (
   <div className={`card ${isFlipped ? "flipped" : ""}`} onClick={onClick}>
